@@ -1,0 +1,17 @@
+[project]
+name = "kokoro-mlx"
+version = "0.1.0"
+description = "Kokoro-82M text to speech on Apple MLX: our own port of hexgrad's official PyTorch code."
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "mlx==0.32.3",
+  "numpy",
+  # text to phonemes, the same package and version the official Kokoro uses
+  "misaki[en]==0.9.4",
+  "spacy>=3.8,<3.9",
+  # misaki's English tokenizer; installed here because misaki would otherwise download it with pip at run time
+  "en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl",
+]
+
+[tool.uv]
+package = false

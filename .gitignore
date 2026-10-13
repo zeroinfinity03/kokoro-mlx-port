@@ -1,0 +1,9 @@
+# official code and weights, our exported weights, Python envs, test data, generated audio
+repo/
+pytorch/
+mlx-port/models/
+mlx-port/.venv/
+tests/.venv/
+tests/fixtures/
+__pycache__/
+*.wav
