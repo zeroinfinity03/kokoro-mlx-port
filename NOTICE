@@ -1,0 +1,10 @@
+kokoro-mlx-port
+An MLX port of Kokoro-82M (text to speech) for Apple silicon.
+
+Ported from hexgrad's kokoro 0.9.4 (https://github.com/hexgrad/kokoro) and
+the Kokoro-82M model (https://huggingface.co/hexgrad/Kokoro-82M), both under
+the Apache License 2.0. The ALBERT layer follows Hugging Face transformers
+(Apache License 2.0). Model weights are not included in this repository; they
+are exported from the official kokoro-v1_0.pth by mlx-port/export/export_weights.py.
+
+This port is licensed under the Apache License 2.0 (see LICENSE).
